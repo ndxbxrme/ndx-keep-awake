@@ -10,7 +10,7 @@
         return res.end('hi');
       });
       return setInterval(function() {
-        return http.get('http://' + ndx.host + '/api/keep-awake');
+        return http.get(ndx.host + '/api/keep-awake');
       }, 5 * 60 * 1000);
     }
   };
